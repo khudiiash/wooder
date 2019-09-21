@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=7"> -->
+	<meta name="viewport" content ="width=device-width,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=no" />
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+	<title>Wooder</title>
+</head>
+<body>
+	
+
+	<div class="top-block">
+		<header class="header">
+						
+			<div class="menu">
+				<div class="menu-lines" onclick='showSidebar()'>
+					<div class="menu-line one"></div>
+					<div class="menu-line two"></div>
+					<div class="menu-line three"></div>
+				</div>
+				<div class="menu-label" id='menuLabel'>MENU</div>
+			</div>
+			
+			<div class="top-logo">
+				
+				<div class="top-logo-text"><div class="top-logo-stick"></div>WOODER</div>
+			</div>
+			<div class="nav">
+				<div class='nav-item' id='navHome' onclick="moveTo('home')">HOME</div>
+				<div onclick="moveTo('products')" id='navProducts' class='nav-item'>PRODUCTS</div>
+				<div onclick="moveTo('howWeWork')" id='navHowWeWork' class='nav-item'>HOW WE WORK</div>
+				<div onclick="moveTo('about')" id='navAbout' class='nav-item'>ABOUT</div>
+			</div>
+	
+			<div class="info-icon" id='infoIcon'><div class="letter-i">i</div></div>
+			
+			<div class="language">
+					<div class="lang-items">
+						<div class="english">EN</div>
+						<div class="russian">RU</div>
+						<div class="ukrainian">UA</div>
+					</div>
+					<div class="arrow-down"></div>
+					
+				</div>
+			
+			<div class="information" id='information'>
+				<p class='info-paragraph' id='infoParagraph'>This website provides you with the ability to get acquainted with the Wooder Company, assess the provided products and services, and make an order.</p>
+				<p id='infoContacts'>You can reach the Woorder Company using the following contacts:</p>
+				<p class='telephone'>Tel: 0(800) 500 40 90</p>
+				<p class='email'>Email: wooder@gmail.com</p>
+			</div>
+				
+		</header>
+		
+		
+		
+		<div class="background">
+			<div class="left-bg rellax" data-rellax-speed="-3">
+					<!-- <img src="img/left_bg.png" class="left-image bg-img" alt=""> -->
+				</div>
+				<div class="right-bg rellax" data-rellax-speed="1">
+					<!-- <img src="img/right_bg.png" class="right-image bg-img" alt=""> -->
+				</div>
+		</div>
+
+		<!--0, 920, 2760, 3363-->
+
+		<div class="main-container">
+			<div class="sidebar">
+				<ul class='sidebar-menu'>
+					<li class='sidebar-menu-item home' onmouseover="increaseLine(this)" onmouseout="reduceLine(this)" onclick="moveTo('home')" id='sidebarHome'>home</li>
+					<div class="line-to-increase home"></div>
+					<li class='sidebar-menu-item products' onmouseover="increaseLine(this)" onmouseout="reduceLine(this)" onclick="moveTo('products')" id='sidebarProducts'>products</li>
+					<div class="line-to-increase products"></div>
+					<li class='sidebar-menu-item howWeWork' onmouseover="increaseLine(this)" onmouseout="reduceLine(this)" onclick="moveTo('howWeWork')" id='sidebarHowWeWork'>how we work</li>
+					<div class="line-to-increase howWeWork"></div>
+					<li class='sidebar-menu-item about' onmouseover="increaseLine(this)" onmouseout="reduceLine(this)" onclick="moveTo('about')" id='sidebarAbout'>about</li>
+					<div class="line-to-increase about"></div>
+					
+					.
+					<div class="social-icons">
+						
+						<a href='https://facebook.com'><img class='social-img' width=30 height=30 src="img/social/facebook.svg" alt="facebook"></a>
+						<a href='https://instagram.com'><img class='social-img' width=30 height=30 src="img/social/instagram.svg" alt="instagram"></a>
+						<a href='https://twitter.com'><img class='social-img' width=30 height=30 src="img/social/twitter.svg" alt="twitter"></a>
+						<a href='https://youtube.com'><img class='social-img' width=30 height=30 src="img/social/youtube.svg" alt="youtube"></a>
+					</div>
+				</ul>
+			</div>
+				<div class="left-01">
+					<div class="vertical">
+							<div class="vertical-stick"></div>
+							<div class="zero-one" id="counter">01</div>
+							<div class="circles">
+									<div class="circle one" id='circle one'></div>
+									<div class="circle passive two" id='circle two'></div>
+									<div class="circle passive three" id='circle three'></div>
+									<div class="circle passive four" id='circle four'></div>
+							</div>
+					</div>
+				</div>
+				
+
+
+				<div class="central">
+					<div class="central-container rellax" data-rellax-speed="2">
+
+							<div class="central-logo" id="central-logo">WOODER</div>
+							
+							<div class="about-company">
+								<p id='about-company-paragraph-1'>Wooder started as a small family business back in 1973. The founder, Steven Bartridge, bought a wood-processing factory after the family business gained a solid reputation in Bronx, New York. The factory accelerated the growth of the company immediately. Already in 1977, the company started to scale in the East.</p>
+								<p id='about-company-paragraph-2'>In 1986, the company merged with another big player in the industry: Ostin Wood Company. Together, they gained major voice in the industry and started to grow beyond it. Already in 1990, Wooder produced 18% of American wooden products.</p>
+							</div>
+							<div class="learn-more-btn" id='learnMoreBtn'>
+									<div class="middle">
+											<div class="learn-more" id='mainLearnMore'>LEARN MORE</div>
+											<div class="arrow">
+												<div class="new-stick"></div>
+												<div class="arrow-right"></div>
+											</div>
+
+									</div>
+									
+							</div>
+							
+							<div class="scroll-down rellax" id='scrollDown' data-rellax-speed="-3">
+								<div class="mouse">
+									<img  class="mouse-img" src="img/mouse.png" alt="">
+								</div>
+								
+								<div class="vertical-stick-mouse"></div>
+								<div class="arrow-down-mouse"></div>
+								<div class="scroll-text" id='scroll'>SCROLL</div>
+								
+							</div>
+
+
+					</div> <!--central-container-->
+					
+
+				</div><!--central-->
+					
+				<div class="right-vertical-text">
+					<div class="vertical-text rellax" id='mainFurnitureAndDecore' data-rellax-speed="-3">
+							FURNITURE & DECORE
+					</div>
+					<div class="V-letter">V</div>
+					<div class="share-icon">
+						<img src="img/share.png" alt="">
+					</div>
+					<div class="right-vertical-stick rellax" data-rellax-speed=".5"></div>
+					<div class="factory">
+
+					</div>
+			
+				</div>
+
+		</div> <!--main-container-->
+	
+
+	</div> <!--top-block-->
+	
+	
+	<div class="middle-block"> 
+		<!-- 2 rows -->
+		<div class="furniture-and-decore">
+
+		<div class="furniture-row">
+			<div class="furniture-left-block" id="furniture-left-block">
+				<!-- 2 columns -->
+				<div class="F-letter">F</div>
+				<div class="furniture-text-row">
+					<div class="furniture-header-row">
+							<hr class="hr">
+							<h3 class='furniture-header' id='furnitureHeader'>FURNITURE</h3>
+					</div>
+					<div class="furniture-paragraph-row">
+							<div class="stick"></div>
+							<p class="furniture-paragraph" id='furnitureParagraph'>Wooder utilizes materials otherwise left behind, rendered useless in their original intent. By creating new places made of reclaimed barnwood...</p>
+						
+					</div>
+					<div class="furniture-learn-more-row">
+						
+						<div class="furniture-learn-more-text learnMoreButton">learn more</div>
+						<div class="learn-more-stick increaseWidth"></div>
+		
+					</div>
+
+				</div>
+				
+				<div class="furniture-sticks-row">
+					<div class="zero-one-dot">01<span class="dot">.</span></div>
+					<div class="vertical-stick furniture"></div>
+				</div>
+
+				
+			</div> <!--furniture-left-block-->
+
+			<div class="furniture-right-block">
+				<div class="furniture-image"></div>
+				<div class="furniture-label" id='furniture-label'>furniture</div>
+			</div>
+		</div> <!-- furniture-row -->
+		
+		<div class="decore-row">
+		
+			<div class="decore-left-block">
+				<div class="decore-image"></div>
+				<div class="decore-label" id='decore-label'>decore</div>
+			</div>
+		
+
+
+			<div class="decore-right-block" id="decore-right-block">
+					<!-- 2 columns -->
+					<div class="D-letter" id='D-letter'>D</div>
+					<div class="decore-text-row">
+						<div class="decore-header-row">
+								<h3 class='decore-header'id='decoreHeader'>DECORE</h3>
+								<hr class="hr">
+						</div>
+						<div class="decore-paragraph-row">
+								
+								<p class="decore-paragraph" id='decoreParagraph'>We make all types of wooden decore as per design by Architect, Interior designer, contractor which is suitable...</p>
+								<div class="stick"></div>
+							
+						</div>
+						<div class="decore-learn-more">
+							<div class="decore-learn-more-row">
+									<div class="decore-learn-more-text learnMoreButton">learn more</div>
+									<div class="learn-more-stick increaseWidth"></div>
+								</div>
+							<div class="nothing"></div>
+						</div>
+						
+	
+					</div>
+					
+					<div class="decore-sticks-row">
+						
+						
+						<div class="zero-one-dot">02<span class="dot">.</span></div>
+						<div class="vertical-stick decore"></div>
+					</div>
+
+					
+				</div> <!--decore-left-block-->
+		</div> <!-- decore-row -->
+	</div> <!--furniture-and-decore-->
+	<div class="wooder-is-quality">
+		<div class="wooder-is-quality-text">
+			<h2 class="wooder-header" id='wooderIsQuality'>Wooder ‒ Is Quality</h2>
+			<div class="wooder-is-quality-stick"></div>
+			<p class="wooder-is-quality-paragraph" id='wooderIsQualityParagraph'>We create unique objects made of rare wood, specifically under the order. Look at the short video about our work</p>
+		</div>
+		<div class="wooder-is-quality-videos" id='videos'>
+			<!-- 3 columns -->
+			<div class="video-column">
+				<div class="video-circle">
+					<div class="innovative-video-image vid-img-container">
+						<img src='img/innovative.png' class="video-img" id='innovations' data-speed='5'></img>
+					</div>
+					<div class="play" id='innovationsPlay'>
+						<div class="play-circle" id='innovationsIcon'></div>
+						<div class="play-icon-container">
+						<div class="play-icon"></div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="video-stick"></div>
+				<div class="video-title" id='innovativeDesign'>Innovative Design</div>
+			</div>
+			<div class="video-column">
+					<div class="video-circle">
+						<div class="high-level-video-image vid-img-container">
+							<img src='img/high-level.png' class="video-img" id='highLevel' data-speed='5'></img>
+						</div>
+						<div class="play" id='highLevelPlay'>
+								<div class="play-circle" id='highLevelIcon'></div>
+								<div class="play-icon-container">
+								<div class="play-icon"></div>
+								</div>
+						</div>
+					</div>
+					<div class="video-stick"></div>
+					<div class="video-title" id='highLevelSkills'>High-Level Skills</div>
+			</div>
+			<div class="video-column">
+				<div class="video-circle">
+					<div class="quality-video-image vid-img-container">
+						<img src='img/quality.png' class="video-img" id='quality' data-speed='5'></img>
+					</div>
+					<div class="play" id='qualityPlay'>
+							<div class="play-circle" id='qualityIcon'></div>
+							<div class="play-icon-container">
+							<div class="play-icon"></div>
+							</div>
+						</div>
+				</div>
+				<div class="video-stick"></div>
+				<div class="video-title" id='qualityProducts'>Quality Products</div>
+			</div>
+
+
+		</div>
+		
+	</div> <!--wooder is quality-->
+	
+	
+	
+	
+	</div>	<!-- middle-block -->
+			
+	
+	<div class="third-block">
+			<div class="videoContainer" id='videoContainer'>
+				<iframe class='videoYoutube' id='videoYoutube' src="https://www.youtube.com/embed/N1aljc6bhZY?start=3&controls=0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			
+		<div class="border">
+				
+			<div class="complexity-text-area">
+				<div class="first-row">
+					<div class="third-hr"></div>
+					<div class="third-header" id='weDoTheDesign'>We do the design of any complexity</div>
+				</div>
+				<div class="second-row">
+					<div class="third-stick"></div>
+					<div class="third-paragraph" id='thisIsATeam'>This is a team of professionals that make the furniture and wood decore of the highest standard. Creating modern designs and adhering to the global quality standards, we are doing work that we love.</div>
+					
+				</div>
+				<div class="third-row">
+
+					<div class="watch-video" id='watchVideoButton'>
+						<div class="play-video-icon">
+							<div class="play-video-circle">
+								<div class="play-icon-container">
+									<div class="play-icon"></div>
+								</div>
+							</div>
+						</div>
+						<h3 class="watch-video-text" id='watchVideo'>watch video</h3>
+					</div>
+						
+					</div>
+				</div><!--complexity-text-areas-->
+
+				<div class="large-circle">
+					<div class="play-video-icon">
+						<div class="play-video-circle">
+							<div class="play-icon-container">
+								<div class="play-icon" id='largePlayVideo'></div>
+							</div>
+						</div>
+					</div>
+				</div> <!--large-circle-->
+			</div> <!--border-->
+		</div> <!--third-block-->
+
+
+	<div class="bottom-block">
+		<div class="about-us-label">
+			<div class="about-us-label-text label-animate" data-speed="3" id='aboutUsLabel'>ABOUT US</div>
+		</div>
+		<div class="about-us-image-column">
+				<img src="img/about_us.png" class="about-us-image">
+		</div>
+		
+		
+		<div class="about-us-text-column">
+			<div class="about-us-header-row">
+				<div class="hr"></div>
+				<div class="about-us-header" id='aboutUsHeader'>ABOUT US</div>
+			</div>
+			<div class="about-us-paragraph-row">
+				<div class="stick"></div>
+				<p class='about-us-paragraph' id='aboutUsParagraph'>We are a team of professionals in the wood-processing and the creation of wooden furniture of the highest class</p>
+
+
+			</div>
+			
+			<div class="about-us-learn-more-row">
+				<div class="about-us-learn-more-button">
+					<div class='about-us-learn-more-button-text learnMoreButton'>learn more</div>
+					<div class="about-us-learn-more-button-arrow"></div>
+				</div>
+				<div class="about-us-stick increaseWidth"></div>
+			</div>
+
+		</div>
+		<div class="A-letter">A</div>
+		
+		
+
+
+	</div> <!-- bottom-block -->
+	
+	<div class="footer">
+			<div class="top-logo">
+				<div class="top-logo-text"><div class="top-logo-stick"></div>WOODER</div>
+			</div>
+	</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script> 
+	<script src='js/jquery.js'></script>
+	<script src="https://cdn.jsdelivr.net/npm/rellax@1.10.0/rellax.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
